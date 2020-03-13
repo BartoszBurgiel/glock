@@ -6,9 +6,9 @@ import "math"
 type Base []byte
 
 // ToBase converts a decimal number to the base
-func (b Base) ToBase(u uint64, sol string) string {
+func (b Base) ToBase(u int, sol string) string {
 
-	convertedN := uint64(len(b))
+	convertedN := int(len(b))
 
 	// If beyond limit
 	if u >= convertedN {
@@ -22,17 +22,17 @@ func (b Base) ToBase(u uint64, sol string) string {
 }
 
 // FromBase converts a number in the base to a decimal number
-func (b Base) FromBase(str string) (out uint64) {
+func (b Base) FromBase(str string) (out int) {
 	out = 0
 	// Iterate over string
 	for i, s := range str {
-		out += uint64(b.getIndex(byte(s))) * uint64(math.Pow(float64(len(b)), float64(i)))
+		out += int(b.getIndex(byte(s))) * int(math.Pow(float64(len(b)), float64(i)))
 	}
 	return out
 }
 
 // inBase is a helper function to
-func (b Base) inBase(n uint64) string {
+func (b Base) inBase(n int) string {
 	return string(b[n])
 }
 

@@ -48,3 +48,21 @@ func ClocksWithCurrentTime() (out string) {
 
 	return out
 }
+
+// HourClock returns the clock showing
+// the current hour as a string
+func HourClock() string {
+	return Clock(getHours()/2, 12)
+}
+
+// MinuteClock returns the clock showing
+// the current minute as a string
+func MinuteClock() string {
+	return Clock(getMinutes(), 60)
+}
+
+// SecondClock returns the clock showing
+// the current second as a string
+func SecondClock() string {
+	return Clock(getSeconds(), 60)
+}

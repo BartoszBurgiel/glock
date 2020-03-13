@@ -29,6 +29,6 @@ func NewGlockTime() CustomTime {
 func (c CustomTime) Convert(base base.Base) (h, m, s string) {
 	h = base.ToBase(c.Hours, "")
 	m = base.ToBase(c.Minutes, "")
-	s = base.ToBase(c.Minutes, "")
+	s = base.ToBase(c.Seconds, "")
 	return h, m, s
 }

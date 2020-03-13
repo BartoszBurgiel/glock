@@ -13,11 +13,13 @@ func (b Base) ToBase(u int, sol string) string {
 	// If beyond limit
 	if u >= convertedN {
 
-		// Calculate the value and pass the reminder
-		sol += b.ToBase(u/convertedN, b.inBase(u%convertedN))
+		// Calculate the value and append on the beginning
+		sol = b.ToBase(u/convertedN, b.inBase(u%convertedN)) + sol
+
 	} else {
-		sol += b.inBase(u)
+		sol = b.inBase(u) + sol
 	}
+
 	return sol
 }
 

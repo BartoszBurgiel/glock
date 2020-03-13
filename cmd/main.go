@@ -1,7 +1,23 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+	"glock"
+	"time"
+)
 
 func main() {
-	fmt.Println("vim-go")
+	for {
+		// clear the console
+		fmt.Print("\033[H\033[2J")
+
+		// create time
+		t := glock.NewGlockTime()
+
+		// print the display
+		fmt.Println(glock.Display(t))
+
+		// sleep
+		time.Sleep(time.Second)
+	}
 }

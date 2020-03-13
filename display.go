@@ -32,7 +32,7 @@ func Display(cTime CustomTime) string {
 	// construct base2
 	h, m, s = cTime.Convert(base.Base2)
 	format(&h, &m, &s)
-	out += fmt.Sprintf(tableRow, 2, h, m, s)
+	out += fmt.Sprintf(lastTableRow, 2, h, m, s)
 
 	return out
 }

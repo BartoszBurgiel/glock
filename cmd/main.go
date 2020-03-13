@@ -15,7 +15,7 @@ func main() {
 		t := glock.NewGlockTime()
 
 		// print the display
-		fmt.Println(glock.Display(t))
+		fmt.Print(glock.Display(t))
 
 		// sleep
 		time.Sleep(time.Second)

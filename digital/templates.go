@@ -1,4 +1,4 @@
-package glock
+package digital
 
 // template for table row
 const tableRow string = "%-2d|%s:%s:%s\n"

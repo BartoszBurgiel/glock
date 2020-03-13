@@ -1,4 +1,4 @@
-package glock
+package digital
 
 import (
 	"fmt"

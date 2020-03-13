@@ -2,7 +2,7 @@ package main
 
 import (
 	"fmt"
-	"glock"
+	glock "glock/digital"
 	"time"
 )
 

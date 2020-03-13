@@ -3,5 +3,5 @@ package glock
 // template for table row
 const tableRow string = "%-2d|%s:%s:%s\n"
 
-// last table row
-const lastTableRow string = "%-2d|%s:%s:%s"
+// template for date
+const date string = "\n%s/%s/%s\n%s day of the year"

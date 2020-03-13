@@ -1,6 +1,9 @@
 # Glock
+Glock is a cool tool for displaying clocks written in Golang
 
-Glock is a cool digital clock written in Golang displaying the current time in various bases including:
+## Digital clock
+Glock can display a digital clock showing the current time, today's date as well as the year's day in various bases including:
+
 * base16 -> hexadecimal
 * base10 -> decimal 
 * base8  -> octal 
@@ -9,11 +12,25 @@ Glock is a cool digital clock written in Golang displaying the current time in v
 
 It makes a quite cool widget
 
-## Preview
+### Preview
 <pre><code>
-16 |0e:07:24    
-10 |14:07:36    
-8  |16:07:44    
-3  |112:21:1100    
-2  |1110:111:100100
+8 |26:30:55
+3 |211:220:1200
+2 |10110:11000:101101
+
+0d/03/7e4
+49th day of the year
+</code></pre>
+
+## Analog clock 
+Glock can also display some data (similarly to a pie chart) or just the time as a digital clock: 
+
+### Preview 
+<pre><code>
+ -------   -------   ------- 
+| \     | |       | |       |
+|   .   | |   .   | |   .   |
+|       | |     \ | |     \ |
+ -------   -------   ------- 
+  hours  | minutes | seconds 
 </code></pre>
